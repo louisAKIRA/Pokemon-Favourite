@@ -1,0 +1,59 @@
+* {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  list-style: none;
+}
+
+.pokemom {
+  display: flex;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 20px;
+  height: 740px;
+  .filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    input {
+      height: 0.4rem;
+    }
+  }
+}
+
+.poke_fav_con {
+  padding: 1px;
+  height: 80%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttom_group {
+  display: flex;
+  height: 45px;
+  .remove_btn:hover {
+    width: 45%;
+    color: red;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a6a2a2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5e5d5d;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
